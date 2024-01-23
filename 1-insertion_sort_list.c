@@ -13,7 +13,7 @@ void insertion_sort_list(listint_t **list)
 	listint_t *key;
 	int temp;
 
-	if (*list == NULL || !*list || !(*list)->next)
+	if (*list == NULL || list == NULL || !*list || !(*list)->next)
 		return;
 
 	current = (*list)->next;
